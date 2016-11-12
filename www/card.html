@@ -1,0 +1,39 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>тестовое задание</title>
+	</head>
+	<body>
+		<table style="border-collapse: separated; border-spacing: 20px 0px;">
+			<tr>
+ 				 <td colspan=2><b>информация про клиента</b></td>
+ 			 </tr>
+ 			 <tr>
+ 				 <td >название клиента</td>
+				<td><?php echo isset($_GET["name_customer"]) ? $_GET["name_customer"] : "";?></td>
+ 			 </tr>
+ 			 <tr>
+ 				 <td >компания</td>
+ 				<td ><?php echo isset($_GET["company"]) ? $_GET["company"] : "";?></td>
+ 			 </tr>
+ 			 <tr>
+ 				 <td colspan=2><b>информация про договор</b></td>
+ 			 </tr>
+			<tr>
+ 				 <td >номер договора</td>
+ 				<td ><?php echo isset($_GET["number"]) ? $_GET["number"] : "";?></td>
+ 			 </tr>
+ 			 <tr>
+ 				 <td >дата подписания</td>
+ 				<td ><?php echo isset($_GET["date_sign"]) ? $_GET["date_sign"] : "";?></td>
+ 			 </tr>
+ 			 <tr>
+ 				 <td colspan=2><b>информация про сервисы</b></td>
+ 			 </tr>
+ 			 <tr>
+ 				 <td><?php echo isset($_GET["services_name"]) ? $_GET["services_name"] : "";?></td>
+				<!-- в services_name вывести название сервисов через <br> --> 
+			</tr>
+		</table>
+	</body>
+</html>

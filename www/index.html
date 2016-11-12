@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"/></script>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<h3 style="text-align: center;">Форма поиска клиентов</h3>
+<hr/><br>
+<form style="margin-left: 30px;">
+<b>Номер договора:</b>
+<input type="text" id="number" onkeypress="return keypress_n(event)"/><br><br>
+
+<b>Статус договора:  </b><br>
+<input type="checkbox" name="status[]" value="work"/>work<br>
+<input type="checkbox" name="status[]" value="connecting"/>connecting<br>
+<input type="checkbox" name="status[]" value="disconnected"/>disconnected<br><br>
+
+<input type="button" value="Отправить" onclick="fsearch_client()"/>
+</form>
+</body>
+</html>
